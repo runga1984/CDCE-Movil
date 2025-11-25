@@ -1,0 +1,8 @@
+{
+  "appId": "com.cdce.app",
+  "appName": "CDCE Movil",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  }
+}

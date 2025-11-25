@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slide-up-mobile { from { transform: translateY(100%); } to { transform: translateY(0); } }
+@keyframes scale-in { from { transform: scale(0.95); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+
+.animate-fade-in { animation: fade-in 0.3s ease-out; }
+.animate-slide-up-mobile { animation: slide-up-mobile 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
+.animate-scale-in { animation: scale-in 0.2s ease-out; }
+.animate-fade-in-up { animation: fade-in 0.4s ease-out, slide-up-mobile 0.4s ease-out; }
+
+/* Forzar fondo claro por defecto */
+body {
+  @apply bg-gray-50 text-slate-800;
+}
